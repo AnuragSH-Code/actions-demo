@@ -15,6 +15,6 @@ jobs:
             ls
             cat README.md
 
-            sudo apt install go -y
+            sudo apt install golang-go -y
 
             go run main.go
