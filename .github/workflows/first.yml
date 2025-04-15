@@ -10,8 +10,11 @@ jobs:
           run: echo "Please update the Laptop"
         - name: Checkout Started
           uses: actions/checkout@v4
-        - name: List Files
-          run: ls
-        - name: ReadFile
-          run: cat README.md
-        
+        - name: Pipe Commands
+          run: |
+            ls
+            cat README.md
+
+            sudo apt install go -y
+
+            go run main.go
