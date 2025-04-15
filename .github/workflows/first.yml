@@ -8,5 +8,10 @@ jobs:
         steps:
         - name: Welcome Message
           run: echo "Please update the Laptop"
+        - name: Checkout Started
+          uses: actions/checkout@v4
         - name: List Files
           run: ls
+        - name: ReadFile
+          run: cat README.md
+        
